@@ -37,6 +37,7 @@ public static void main(String[] args) throws IOException
 	
 	element.sendKeys("Heelo");
 	System.out.println("Completed");
+	System.out.println("Element have taken");
 	((JavascriptExecutor)Appdriver).executeScript("arguments[0].style.border='3px solid red'", element);
 	
 	
