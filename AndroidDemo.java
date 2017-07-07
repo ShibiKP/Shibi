@@ -8,7 +8,7 @@ public class AndroidDemo
 {
 	public static void main(String[] args) throws IOException 
 	{
-		
+		System.err.println("Error");
 		demo();
 		Runtime runtime = Runtime.getRuntime();
 		try {
