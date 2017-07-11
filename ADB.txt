@@ -1,0 +1,96 @@
+-s <device-serial>
+1215fc0ca59e1a03
+86a328a5
+
+48b1698b0000d
+
+Adb devices
+  Value empty 
+
+-- If ADB devices name not been displayed--
+turn on developer options on the android device.
+enable check box for stay awake.
+enable check box for USB debugging.
+open cmd
+got to platform tools like D:\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools.
+adb kill-server
+adb start-server
+adb devices
+
+
+D:\Andriod\adt-bundle-windows-x86-20140321\sdk\platform-tools
+
+
+--Clear App data--
+adb -s 1215fc0ca59e1a03 shell pm clear com.marykay.marykayandroid
+adb -s 86a328a5 shell pm clear com.marykay.marykayandroid
+86a328a5
+
+--clear Chrome Browser Catch--
+
+adb -s 1215fc0ca59e1a03 shell pm clear com.android.chrome
+
+--Finding appPackage and appActivity from Command Line--
+
+1. Type ‘adb shell’ and Enter, to get in to the device.
+2. Now type the below mentioned command to get the information apk:
+  dumpsys window windows | grep -E ‘mCurrentFocus|mFocusedApp’
+
+http://toolsqa.com/mobile-automation/appium/how-to-find-apppackage-and-appactivity-for-apk-file/
+
+- Force-stop app-
+
+adb shell am force-stop com.my.app.package
+
+Screen light lock 
+
+adb shell input keyevent 26
+
+-launch chrome browser Using CMD-
+adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main
+
+-
+adb -s 86a328a5 shell am force-stop com.android.chrome
+
+
+String cmdArgs = "adb -s " + UDID + " shell pm clear " + appName;
+
+
+adb -s " + UDID + " shell pm clear " + appName
+
+--Enter Pin number 
+
+adb shell input text 7
+how to find the appium versio
+KEYCODE_NUMPAD_1
+
+adb shell input keyevent KEYCODE_NUMPAD_1
+
+C:\Program Files\nodejs\npm" install npm -g
+Update NPM
+npm -g install npm
+
+update aapium 
+
+update Chrome Drive in Appium folder:-
+D:\Appium\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win
+URL :- https://github.com/appium/appium/issues/5686
+
+proper way to Uopdate appium by APpium folder 
+ex:- D:\appium install -g appium@1.6.3
+
+http://stackoverflow.com/questions/18412129/how-do-i-update-node-and-npm-on-windows
+
+
+manitory for installing the Appium 
+
+1. java 1.8.0_121 bin path should be present in the Environemnt variable
+
+
+
+Installing Webdriver in SafariBrowser
+https://stackoverflow.com/questions/19971088/how-to-open-safari-browser-using-selenium-webdriver
+
+driver.Manage().Window.Size = new Size(480, 320);
+
+
