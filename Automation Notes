@@ -3,3 +3,6 @@ https://support.apple.com/kb/PH25327?locale=en_US
 For processor ID to close
 https://stackoverflow.com/questions/15952663/find-pid-of-process-that-use-a-port-on-windows
 
+To Kill the PID using CMD 
+C:\>echo off & (for /f "tokens=5" %a in ('netstat -aon ^| findstr 4723') do Task
+kill /PID "%a" /F) & echo on
