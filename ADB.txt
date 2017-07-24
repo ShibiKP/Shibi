@@ -1,3 +1,6 @@
+Download Appium Latest version:- 
+http://www.automationtestinghub.com/download-and-install-appium-1-6/
+
 -s <device-serial>
 1215fc0ca59e1a03
 86a328a5
@@ -32,9 +35,9 @@ adb -s 1215fc0ca59e1a03 shell pm clear com.android.chrome
 
 --Finding appPackage and appActivity from Command Line--
 
-1. Type ‘adb shell’ and Enter, to get in to the device.
+1. Type â€˜adb shellâ€™ and Enter, to get in to the device.
 2. Now type the below mentioned command to get the information apk:
-  dumpsys window windows | grep -E ‘mCurrentFocus|mFocusedApp’
+  dumpsys window windows | grep -E â€˜mCurrentFocus|mFocusedAppâ€™
 
 http://toolsqa.com/mobile-automation/appium/how-to-find-apppackage-and-appactivity-for-apk-file/
 
