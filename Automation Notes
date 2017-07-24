@@ -6,3 +6,5 @@ https://stackoverflow.com/questions/15952663/find-pid-of-process-that-use-a-port
 To Kill the PID using CMD 
 C:\>echo off & (for /f "tokens=5" %a in ('netstat -aon ^| findstr 4723') do Task
 kill /PID "%a" /F) & echo on
+Just save as .bat file the Port PID will kill
+FOR /F "usebackq tokens=5" %%i IN (`netstat -aon ^| find "<port>"`) DO taskkill /F /PID %%i
