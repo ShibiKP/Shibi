@@ -11,3 +11,182 @@ FOR /F "usebackq tokens=5" %%i IN (`netstat -aon ^| find "<port>"`) DO taskkill 
 
 To Restart the Android Devices using Below command
 adb -s <deviceid> reboot
+
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.6.6-beta.2","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 64972 ms - 90 
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone/iPad","newCommandTimeout":"220000","autoWebView":"true","--bootstrap-port":"4723","--webkit-debug-proxy-port":"27753","udid":"08eea757eaea5e75f60970d2c4641faaa0ff8633","autoAcceptAlerts":"true","wdaLocalPort":"8200","automationName":"XCUITest","realDeviceLogger":"/usr/local/lib/node_modules/deviceconsole/deviceconsole","browserName":"Safari"},"capabilities":{"firstMatch":[{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone/iPad","newCommandTimeout":"220000","autoWebView":"true","--bootstrap-port":"4723","--webkit-debug-proxy-port":"27753","udid":"08eea757eaea5e75f60970d2c4641faaa0ff8633","autoAcceptAlerts":"true","wdaLocalPort":"8200","automationName":"XCUITest","realDeviceLogger":"/usr/local/lib/node_modules/deviceconsole/deviceconsole","browserName":"Safari"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone/iPad","newCommandTimeout":"220000","autoWebView":"true","--bootstrap-port":"4723","--webkit-debug-proxy-port":"27753","udid":"08eea757eaea5e75f60970d2c4641faaa0ff8633","autoAcceptAlerts":"true","wdaLocalPort":"8200","automationName":"XCUITest","realDeviceLogger":"/usr/local/lib/node_modules/deviceconsole/deviceconsole","browserName":"Safari"},null,{"firstMatch":[{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone/iPad","newCommandTimeout":"220000","autoWebView":"true","--bootstrap-port":"4723","--webkit-debug-proxy-port":"27753","udid":"08eea757eaea5e75f60970d2c4641faaa0ff8633","autoAcceptAlerts":"true","wdaLocalPort":"8200","automationName":"XCUITest","realDeviceLogger":"/usr/local/lib/node_modules/deviceconsole/deviceconsole","browserName":"Safari"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1501066814228 (06:00:14 GMT-0500 (CDT))
+[Appium] Creating new XCUITestDriver (v2.32.2) session
+[Appium] Capabilities:
+[Appium]   platformName: 'iOS'
+[Appium]   platformVersion: '10.3.2'
+[Appium]   deviceName: 'iPhone/iPad'
+[Appium]   newCommandTimeout: '220000'
+[Appium]   autoWebView: 'true'
+[Appium]   --bootstrap-port: '4723'
+[Appium]   --webkit-debug-proxy-port: '27753'
+[Appium]   udid: '08eea757eaea5e75f60970d2c4641faaa0ff8633'
+[Appium]   autoAcceptAlerts: 'true'
+[Appium]   wdaLocalPort: '8200'
+[Appium]   automationName: 'XCUITest'
+[Appium]   realDeviceLogger: '/usr/local/lib/node_modules/deviceconsole/deviceconsole'
+[Appium]   browserName: 'Safari'
+[debug] [XCUITest] XCUITestDriver version: 2.32.2
+[BaseDriver] Capability 'autoAcceptAlerts' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] Capability 'newCommandTimeout' changed from string ('220000') to integer (220000). This may cause unexpected behavior
+[BaseDriver] Capability 'wdaLocalPort' changed from string ('8200') to integer (8200). This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: autoWebView, --bootstrap-port, --webkit-debug-proxy-port, realDeviceLogger.
+[XCUITest] The capabilities 'autoAcceptAlerts' and 'autoDismissAlerts' do not work for XCUITest-based tests. Please adjust your alert handling accordingly.
+[BaseDriver] Session created with session id: e9c829a1-4471-4060-849e-1dbdad4f2dcb
+[debug] [XCUITest] Xcode version set to '8.3.2' 
+[debug] [XCUITest] iOS SDK Version set to '10.3'
+[debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1501066816051 (06:00:16 GMT-0500 (CDT))
+[debug] [XCUITest] Available devices: 08eea757eaea5e75f60970d2c4641faaa0ff8633, e5ee9c8a96156422a2a70f3af821f6bf83bd57cb
+[debug] [XCUITest] Creating iDevice object with udid '08eea757eaea5e75f60970d2c4641faaa0ff8633'
+[XCUITest] Determining device to run tests on: udid: '08eea757eaea5e75f60970d2c4641faaa0ff8633', real device: true
+[XCUITest] Safari test requested
+[debug] [BaseDriver] Event 'appConfigured' logged at 1501066818304 (06:00:18 GMT-0500 (CDT))
+[debug] [BaseDriver] Event 'resetStarted' logged at 1501066818305 (06:00:18 GMT-0500 (CDT))
+[debug] [XCUITest] Reset: running ios real device reset flow
+[debug] [BaseDriver] Event 'resetComplete' logged at 1501066818306 (06:00:18 GMT-0500 (CDT))
+[debug] [iOSLog] Attempting iOS device log capture via libimobiledevice idevicesyslog
+[debug] [iOSLog] Found idevicesyslog: '/usr/local/bin/idevicesyslog'
+[debug] [BaseDriver] Event 'logCaptureStarted' logged at 1501066818624 (06:00:18 GMT-0500 (CDT))
+[XCUITest] Setting up real device
+[debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1501066818626 (06:00:18 GMT-0500 (CDT))
+[XCUITest] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[XCUITest] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj'
+[XCUITest] Launching WebDriverAgent on the device
+[debug] [XCUITest] Carthage found: '/usr/local/bin/carthage'
+[debug] [XCUITest] Killing hanging processes
+[XCUITest] xcodebuild exited with code 'null' and signal 'SIGKILL'
+[debug] [XCUITest] iproxy exited with code 'null'
+[debug] [XCUITest] Starting iproxy to forward traffic from local port 8200 to device port 8100 over USB
+[debug] [XCUITest] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=08eea757eaea5e75f60970d2c4641faaa0ff8633 -configuration Debug IPHONEOS_DEPLOYMENT_TARGET=10.3' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[debug] [XCUITest] Output from xcodebuild will not be logged
+[debug] [XCUITest] Waiting up to 60000ms for WebDriverAgent to start
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8200/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.3\"\n    },\n    \"ios\" : {\n      \"simulatorVersion\" : \"10.3.3\",\n      \"ip\" : \"172.17.240.195\"\n    },\n    \"build\" : {\n      \"time\" : \"Jul 25 2017 05:26:00\"\n    }\n  },\n  \"sessionId\" : \"4BAE9F9D-C3AE-48CF-A0CD-79C35D218F00\",\n  \"status\" : 0\n}"
+[debug] [XCUITest] WebDriverAgent running on ip '172.17.240.195'
+[debug] [XCUITest] WebDriverAgent successfully started after 11106ms
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066836106 (06:00:36 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Log file for xcodebuild test: /Users/tfstest/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/630A36DD-83E0-47C7-9818-712810ACB166/Session-WebDriverAgentRunner-2017-07-26_060046-InLaul.log
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066855412 (06:00:55 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066856817 (06:00:56 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066857916 (06:00:57 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066858947 (06:00:58 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066859988 (06:00:59 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066861317 (06:01:01 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066862621 (06:01:02 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066863809 (06:01:03 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [XCUITest] Failed to create WDA session. Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1501066865222 (06:01:05 GMT-0500 (CDT))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [JSONWP Proxy] Got response with status 200: {"value":{"sessionId":"230F5102-59D6-42EE-8486-A0F03DE54E9E","capabilities":{"device":"ipad","browserName":"Safari","sdkVersion":"10.3.3","CFBundleIdentifier":"com.apple.mobilesafari"}},"sessionId":"230F5102-59D6-42EE-8486-A0F03DE54E9E","status":0}
+[debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1501066874998 (06:01:14 GMT-0500 (CDT))
+[debug] [XCUITest] Found WDA derived data folder: '/Users/tfstest/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy'
+[XCUITest] Setting '555' permissions to '/Users/tfstest/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [BaseDriver] Event 'wdaPermsAdjusted' logged at 1501066875107 (06:01:15 GMT-0500 (CDT))
+[debug] [BaseDriver] Event 'wdaStarted' logged at 1501066875107 (06:01:15 GMT-0500 (CDT))
+[debug] [XCUITest] Setting initial orientation to 'PORTRAIT'
+[debug] [JSONWP Proxy] Proxying [POST /orientation] to [POST http://localhost:8200/session/230F5102-59D6-42EE-8486-A0F03DE54E9E/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [JSONWP Proxy] Got response with status 200: {"value":{},"sessionId":"230F5102-59D6-42EE-8486-A0F03DE54E9E","status":0}
+[debug] [BaseDriver] Event 'orientationSet' logged at 1501066880706 (06:01:20 GMT-0500 (CDT))
+[debug] [XCUITest] Waiting for initial webview
+[debug] [iOS] Waiting for 3000 ms before navigating to view.
+[debug] [iOS] Navigating to most recently opened webview
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[debug] [RemoteDebugger] Page element JSON: [{"devtoolsFrontendUrl":"/devtools/devtools.html?ws=localhost:27753/devtools/page/11","faviconUrl":"","thumbnailUrl":"/thumb/http://appium.io/","title":"Appium: Mobile App Automation Made Awesome.","url":"http://appium.io/","webSocketDebuggerUrl":"ws://localhost:27753/devtools/page/11","appId":"PID:595"}]
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[debug] [RemoteDebugger] Page element JSON: [{"devtoolsFrontendUrl":"/devtools/devtools.html?ws=localhost:27753/devtools/page/11","faviconUrl":"","thumbnailUrl":"/thumb/http://appium.io/","title":"Appium: Mobile App Automation Made Awesome.","url":"http://appium.io/","webSocketDebuggerUrl":"ws://localhost:27753/devtools/page/11","appId":"PID:595"}]
+[debug] [iOS] Picking webview 'WEBVIEW_11'
+[debug] [iOS] Attempting to set context to 'WEBVIEW_11'
+[debug] [RemoteDebugger] WebKit debugger web socket connected to url: ws://localhost:27753/devtools/page/11
+[debug] [RemoteDebugger] Unregistering from page readiness notifications
+[debug] [BaseDriver] Event 'initialWebviewNavigated' logged at 1501066884046 (06:01:24 GMT-0500 (CDT))
+[Appium] New XCUITestDriver session created successfully, session e9c829a1-4471-4060-849e-1dbdad4f2dcb added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1501066884048 (06:01:24 GMT-0500 (CDT))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"Safari","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone/iPad","newCommandTimeout":"220000","autoWebView":"true","--bootstrap-port":"4723","--webkit-debug-proxy-port":"27753","udid":"08eea757eaea5e75f60970d2c4641faaa0ff8633","autoAcceptAlerts":"true","wdaLocalPort":"8200","automationName":"XCUITest","realDeviceLogger":"/usr/local/lib/node_modules/deviceconsole/deviceconsole"}
+[HTTP] <-- POST /wd/hub/session 200 69826 ms - 665 
+[HTTP] --> GET /wd/hub/session/e9c829a1-4471-4060-849e-1dbdad4f2dcb/screenshot {}
+[debug] [MJSONWP] Calling AppiumDriver.getScreenshot() with args: ["e9c829a1-4471-4060-849e-1dbdad4f2dcb"]
+[debug] [XCUITest] Executing command 'getScreenshot'
+[debug] [JSONWP Proxy] Proxying [GET /screenshot] to [GET http://localhost:8200/session/230F5102-59D6-42EE-8486-A0F03DE54E9E/screenshot] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"value\" : \"iVBORw0KGgoAAAANSUhEUgAABgAAAAgACAYAAADg0fg2AAAAAXNSR0IArs4c6QAA\\r\\nABxpRE9UAAAAAgAAAAAAAAQAAAAAKAAABAAAAAQAAAmg6K3Yb1MAAEAASURBVHgB\\r\\n7N133BxV2f\\/xKFIsKIgKonQfhFCTUJPQe+g1hN57CYRO6ASIIXQCqNgAFR9FRFER\\r\\nUUFAkCrgA2m0BBIQlWChKed3fye\\/a3J27pnd2dmZ3dnZzx\\/7mt0pZ86c857ZOeea\\r\\nMuDdd991fCgDDGAAAxjAAAYwgAEMYAADGMAABjCAAQxgAAMYwEC1DAygQqtVodQn\\r\\n9YkBDGAAAxjAAAYwgAEMYAADGMAABjCAAQxgAAMyQACAOyC4AwQDGMAABjCAAQxg\\r\\nAAMYwAAGMIABDGAAAxjAAAYqaIAAQAUrlege0T0MYAADGMAABjCAAQxgAAMYwAAG\\r\\nMIABDGAAAxggAEAAgMgeBjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMVNAAAYAK\\r\\nViqRPSJ7GMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwQACAAACRPQxgAAMYwAAG\\r\\nMIABDGAAAxjAAAYwgAEMYAADGKigAQIAFaxUIntE9jCAAQxgAAMYwAAGMIABDGAA\\r\\nAxjAAAYwgAEMYIAAAAEAInsYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAABjBQQQME\\r\\nACpYqUT2iOxhAAMYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAAAQACAET2MIABDGAA\\r\\nAxjAAAYwgAEMYAADGMAABjCAgQYGpkyZ4o477ji35pprug996EM1nzXWWMMde+yx\\r\\nbvLkyZRjg3IkKJEtKHH33Xe7d955p2lfBAA6BPKf\\/\\/yn+9nPfuZOPvlkt9lmm7ll\\r\\nllnGffKTnww...
+[debug] [MJSONWP] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABgAAAAgACAYAAADg0fg2AAAAAXNSR0IArs4c6QAA\r\nABxpRE9UAAAAAgAAAAAAAAQAAAAAKAAABAAAAAQAAAmg6K3Yb1MAAEAASURBVHgB\r\n7N133BxV2f/xKFIsKIgKonQfhFCTUJPQe+g1hN57CYRO6ASIIXQCqNgAFR9FRFER\r\nUUFAkCrgA2m0BBIQlWChKed3fye/a3J27pnd2dmZ3dnZzx/7mt0pZ86c857ZOeea\r\nMuDdd991fCgDDGAAAxjAAAYwgAEMYAADGMAABjCAAQxgAAMYwEC1DAygQqtVodQn\r\n9YkBDGAAAxjAAAYwgAEMYAADGMAABjCAAQxgAAMyQACAOyC4AwQDGMAABjCAAQxg\r\nAAMYwAAGMIABDGAAAxjAAAYqaIAAQAUrlege0T0MYAADGMAABjCAAQxgAAMYwAAG\r\nMIABDGAAAxggAEAAgMgeBjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwgAEMVNAAAYAK\r\nViqRPSJ7GMAABjCAAQxgAAMYwAAGMIABDGAAAxjAAAYwQACAAACRPQxgAAMYwAAG\r\nMIABDGAAAxjAAAYwgAEMYAADGKigAQIAFaxUIntE9jCAAQxgAAMYwAAGMIABDGAA\r\nAxjAAAYwgAEMYIAAAAEAInsYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAABjBQQQME\r\nACpYqUT2iOxhAAMYwAAGMIABDGAAAxjAAAYwgAEMYAADGMAAAQACAET2MIABDGAA\r\nAxjAAAYwgAEMYAADGMAABjCAgQYGpkyZ4o477ji35pprug996EM1nzXWWMMde+yx\r\nbvLkyZRjg3IkKJEtKHH33Xe7d955p2lfBAA6BPKf//yn+9nPfuZOPvlkt9lmm7ll\r\nllnGffKTnwwOHBrqt8afdNJJ7qc//anT/Owc2XYOyo1ywwAGMIABDGCg3QZ0Yj51\r\n...
+[HTTP] <-- GET /wd/hub/session/e9c829a1-4471-4060-849e-1dbdad4f2dcb/screenshot 200 1561 ms - 1432306 
+[HTTP] --> DELETE /wd/hub/session/e9c829a1-4471-4060-849e-1dbdad4f2dcb/window {}
+[debug] [MJSONWP] Calling AppiumDriver.closeWindow() with args: ["e9c829a1-4471-4060-849e-1dbdad4f2dcb"]
+[debug] [XCUITest] Executing command 'closeWindow'
+[debug] [RemoteDebugger] Executing 'execute_script' atom in default context
+[debug] [RemoteDebugger] Sending javascript command (function(){return function(){for(var aa="funct...
+[debug] [RemoteDebugger] Sending WebKit data: {"method":"Runtime.evaluate","params":{"objectGroup":"console","includeCommandLineAPI":true,"doNotPauseOnExceptionsAndMuteConsole":true,"expression":"(function(){return function(){for(var aa=\"func...
+[debug] [RemoteDebugger] Webkit response timeout: 5000
+[debug] [RemoteDebugger] Receiving WebKit data: {"result":{"result":{"type":"object","value":{"status":0,"value":null}},"wasThrown":false},"id":1}
+[debug] [RemoteDebugger] Found handler for message '1'
+[debug] [RemoteDebugger] Received result for atom 'execute_script' execution: null
+[debug] [MJSONWP] Responding to client with driver.closeWindow() result: null
+[HTTP] <-- DELETE /wd/hub/session/e9c829a1-4471-4060-849e-1dbdad4f2dcb/window 200 713 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/e9c829a1-4471-4060-849e-1dbdad4f2dcb {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["e9c829a1-4471-4060-849e-1dbdad4f2dcb"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1501066891922 (06:01:31 GMT-0500 (CDT))
+[debug] [JSONWP Proxy] Proxying [DELETE /session/e9c829a1-4471-4060-849e-1dbdad4f2dcb] to [DELETE http://localhost:8200/session/230F5102-59D6-42EE-8486-A0F03DE54E9E] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"value\" : {\n\n  },\n  \"sessionId\" : \"7B9D295C-C84D-4459-A0D4-B54077A598D2\",\n  \"status\" : 0\n}"
+[XCUITest] Shutting down sub-processes
+[XCUITest] Shutting down iproxy process (pid 8832)
+[debug] [XCUITest] iproxy exited with code 'null'
+[XCUITest] Shutting down xcodebuild process (pid 8833)
+[XCUITest] xcodebuild exited with code 'null' and signal 'SIGTERM'
+[debug] [XCUITest] Found WDA derived data folder: '/Users/tfstest/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy'
+[XCUITest] Setting '755' permissions to '/Users/tfstest/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [XCUITest] In a web session. Removing remote debugger
+[debug] [RemoteDebugger] Disconnecting from WebKit remote debugger
+[debug] [iOSLog] Stopping iOS log capture
+[Appium] Removing session e9c829a1-4471-4060-849e-1dbdad4f2dcb from our master session list
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1501066893654 (06:01:33 GMT-0500 (CDT))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/e9c829a1-4471-4060-849e-1dbdad4f2dcb 200 1743 ms - 76 
+[debug] [RemoteDebugger] WebKit remote debugger socket disconnected
+[HTTP] --> GET /wd/hub/session//screenshot {}
+[debug] [HTTP] No route found. Setting content type to 'text/plain'
+[HTTP] <-- GET /wd/hub/session//screenshot 404 16 ms - 69 
+[HTTP] --> DELETE /wd/hub/session//window {}
+[debug] [HTTP] No route found. Setting content type to 'text/plain'
+[HTTP] <-- DELETE /wd/hub/session//window 404 1 ms - 65 
