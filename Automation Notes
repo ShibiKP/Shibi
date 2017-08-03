@@ -14,3 +14,6 @@ adb -s <deviceid> reboot
 
 To find the Webelement By Windows Chrome
 chrome://inspect/#devices
+ 
+ Link for iOS App element inspector Link to download
+ https://github.com/mykola-mokhnach/Appium-iOS-Inspector
