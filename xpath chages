@@ -1,1 +1,4 @@
 //*[contains(text(),'My Inventory')]/span
+
+
+ (//*[@class='content cf']//*[@class='price-bag'])[3]
