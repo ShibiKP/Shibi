@@ -2,3 +2,4 @@
 
 
  (//*[@class='content cf']//*[@class='price-bag'])[3]
+//*[@class='form-control']
