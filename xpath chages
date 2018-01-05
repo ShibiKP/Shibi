@@ -1,7 +1,1 @@
-//*[contains(text(),'My Inventory')]/span
-
-
-//p[@class='price']
-
- (//*[@class='content cf']//*[@class='price-bag'])[3]
-//*[@class='form-control']
+//*[@class='quantity-count ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-maxlength']
