@@ -1,0 +1,23 @@
+the given string is palindrome or not without using string function and without using temp variable in java
+
+package Basic;
+
+public class parent {
+
+	public static void main(String[] args) {
+		
+	
+		int check=0;
+		String str = "MAAMA";
+        int l=str.length();
+        for (int i=0;i<l;i++){
+            if(str.charAt(i)!=str.charAt(l-l-i))
+                check++;
+        }
+        if(check==0)
+            System.out.println("yes it's palindrome");
+        else
+            System.out.println("no it's not.");
+
+	}
+}
